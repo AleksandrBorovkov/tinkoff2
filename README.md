@@ -4,7 +4,7 @@ Updated fork of https://github.com/aristofun/tinkoff2
 
 What's new: 
 1. New REST V2 API endpoint (https://securepay.tinkoff.ru/v2) support
-2. Rails 4+ compatibility
+2. Rails 5+ compatibility
 
 Not all operations implemented fully. Please refer to https://oplata.tinkoff.ru/landing/develop/documentation and read the code!
 
@@ -13,7 +13,7 @@ Not all operations implemented fully. Please refer to https://oplata.tinkoff.ru/
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tinkoff2', '~> 0.4.0', require: 'tinkoff'
+gem 'tinkoff2', github: "AleksandrBorovkov/tinkoff2", require: 'tinkoff'
 ```
 
 
@@ -70,7 +70,7 @@ end
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/aristofun/tinkoff  
+Bug reports and pull requests are welcome on GitHub at https://github.com/AleksandrBorovkov/tinkoff2 
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
