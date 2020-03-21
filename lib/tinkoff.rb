@@ -15,7 +15,8 @@ module Tinkoff
   def self.tinkoff_params
     {
       TerminalKey: Tinkoff.config.terminal_key,
-      Password: Tinkoff.config.password
+      Password: Tinkoff.config.password,
+      BaseUrl: Tinkoff.config.url
     }
   end
 end

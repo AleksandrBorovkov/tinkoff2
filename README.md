@@ -19,13 +19,14 @@ gem 'tinkoff2', github: "AleksandrBorovkov/tinkoff2", require: 'tinkoff'
 
 ## Usage
 
-Configure the gem with the credentials provided by the bank. If you are using Ruby on Rails, you should do that in an initializer.
+Configure the gem with the credentials provided by the bank and API url. If you are using Ruby on Rails, you should do that in an initializer.
 
 ```ruby
 # config/initializers/tinkoff.rb
 Tinkoff.configure do |config|
   config.terminal_key = 'TerminalKey'
   config.password = 'Password'
+  config.url = 'API URL'
 end
 ```
 
