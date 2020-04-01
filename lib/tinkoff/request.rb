@@ -1,9 +1,7 @@
 module Tinkoff
   class Request
-    BASE_URL = Tinkoff.tinkoff_params[:BaseUrl]
-
     def initialize(path, params = {})
-      @url = BASE_URL + path
+      @url = Tinkoff.tinkoff_params[:BaseUrl] + path
       @params = params
     end
 
