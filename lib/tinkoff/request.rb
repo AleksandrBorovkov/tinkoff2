@@ -10,6 +10,7 @@ module Tinkoff
 
       response = HTTParty.post(
         @url,
+        verify: false,
         body: @params.to_json,
         # debug_output: $stdout,
         :headers => {'Content-Type' => 'application/json'}
